@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bayad Design Studio — Luxury Interior Design</title>
+  <meta name="description" content="Bayad Design Studio — luxury interior design, modern architecture, and custom furniture. Transforming spaces into timeless homes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="preload">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Loading screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">BAYAD</span>
+      <span class="loader-sub">DESIGN STUDIO</span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="logo">BAYAD<span> DESIGN STUDIO</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tool.html" class="nav-cta">AI Studio</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section id="hero" aria-label="Intro">
+      <div class="hero-bg" role="img" aria-label="Elegant interior"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker fade-item">BAYAD DESIGN STUDIO</p>
+        <h1 class="fade-item">Transforming Spaces Into Timeless Homes</h1>
+        <p class="hero-sub fade-item">Luxury Interior Design &bull; Architecture &bull; Custom Furniture</p>
+        <div class="hero-btns fade-item">
+          <a href="#portfolio" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- 2. About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-media" data-animate="fade-right">
+          <!-- PLACEHOLDER IMAGE — replace with a photo of your own work -->
+          <img src="https://picsum.photos/seed/bayadabout/900/1100" alt="Interior designed by Bayad Design Studio" loading="lazy" />
+          <div class="about-frame" aria-hidden="true"></div>
+        </div>
+        <div class="about-text" data-animate="fade-left">
+          <p class="kicker">About Us</p>
+          <h2 class="section-title">Crafted With Passion, Built To Last</h2>
+          <p>Bayad Design Studio blends luxury interior design with modern architecture and custom furniture, turning every space into a story told through material, light, and detail.</p>
+          <p>From creative solutions to obsessive attention to detail, we design homes and workplaces that feel effortless — and unmistakably yours.</p>
+          <ul class="about-list">
+            <li>Luxury interior design</li>
+            <li>Modern architecture</li>
+            <li>Custom furniture</li>
+            <li>Creative solutions</li>
+            <li>Attention to detail</li>
+          </ul>
+          <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">What We Do</p>
+        <h2 class="section-title center" data-animate="fade-up">Our Services</h2>
+        <div class="services-grid">
+          <article class="service-card" data-animate="fade-up" style="--delay:.05s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></div>
+            <h3>Residential Design</h3>
+            <p>Complete home interiors shaped around the way you actually live — elegant, warm, personal.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" style="--delay:.1s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <h3>Commercial Design</h3>
+            <p>Offices, shops, and hospitality spaces designed to impress clients and empower teams.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" style="--delay:.15s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h16v12H4z"/><path d="M4 8l2-4h12l2 4M9 12h6"/></svg></div>
+            <h3>Kitchen Design</h3>
+            <p>Custom cabinetry, premium surfaces, and layouts that make the kitchen the heart of the home.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" style="--delay:.2s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18v-6a2 2 0 012-2h14a2 2 0 012 2v6"/><path d="M3 18h18M6 10V7a2 2 0 012-2h8a2 2 0 012 2v3"/></svg></div>
+            <h3>Bedroom Design</h3>
+            <p>Calm, refined bedrooms with custom beds, wardrobes, and lighting made for rest.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" style="--delay:.25s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+            <h3>3D Visualization</h3>
+            <p>See your space before it's built — realistic previews of every design direction.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" style="--delay:.3s">
+            <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20V8l6-4 6 4v12"/><path d="M10 20v-6h4v6"/></svg></div>
+            <h3>Furniture Design</h3>
+            <p>One-of-a-kind pieces, handcrafted in real wood, built to your space and your taste.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Portfolio -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">Selected Work</p>
+        <h2 class="section-title center" data-animate="fade-up">Portfolio</h2>
+        <div class="filter-bar" data-animate="fade-up" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="living">Living Room</button>
+          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+          <button class="filter-btn" data-filter="office">Office</button>
+          <button class="filter-btn" data-filter="villa">Villa</button>
+        </div>
+        <!-- PLACEHOLDER IMAGES — replace each with photos of your real projects -->
+        <div class="portfolio-grid">
+          <figure class="portfolio-item" data-category="living" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp1/800/600" alt="Living room project" loading="lazy"/><figcaption><h3>Serene Living</h3><span>Living Room</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="kitchen" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp2/800/600" alt="Kitchen project" loading="lazy"/><figcaption><h3>Oak &amp; Stone Kitchen</h3><span>Kitchen</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="bedroom" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp3/800/600" alt="Bedroom project" loading="lazy"/><figcaption><h3>Quiet Luxury Suite</h3><span>Bedroom</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="office" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp4/800/600" alt="Office project" loading="lazy"/><figcaption><h3>Executive Study</h3><span>Office</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="villa" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp5/800/600" alt="Villa project" loading="lazy"/><figcaption><h3>Hillside Villa</h3><span>Villa</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="living" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp6/800/600" alt="Living room project" loading="lazy"/><figcaption><h3>Warm Minimal Lounge</h3><span>Living Room</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="kitchen" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp7/800/600" alt="Kitchen project" loading="lazy"/><figcaption><h3>Chef's Kitchen</h3><span>Kitchen</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="bedroom" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp8/800/600" alt="Bedroom project" loading="lazy"/><figcaption><h3>Master Retreat</h3><span>Bedroom</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="office" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp9/800/600" alt="Office project" loading="lazy"/><figcaption><h3>Creative Workspace</h3><span>Office</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="villa" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp10/800/600" alt="Villa project" loading="lazy"/><figcaption><h3>Courtyard Villa</h3><span>Villa</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="living" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp11/800/600" alt="Living room project" loading="lazy"/><figcaption><h3>Gallery Living</h3><span>Living Room</span></figcaption></figure>
+          <figure class="portfolio-item" data-category="kitchen" data-animate="zoom"><img src="https://picsum.photos/seed/bayadp12/800/600" alt="Kitchen project" loading="lazy"/><figcaption><h3>Slab &amp; Brass Kitchen</h3><span>Kitchen</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Statistics — PLACEHOLDER NUMBERS: replace with your real figures before launch -->
+    <section id="stats" class="section stats" aria-label="Statistics">
+      <div class="container stats-grid">
+        <div class="stat" data-animate="fade-up"><span class="stat-num" data-target="250" data-suffix="+">0</span><p>Completed Projects</p></div>
+        <div class="stat" data-animate="fade-up" style="--delay:.1s"><span class="stat-num" data-target="12" data-suffix="+">0</span><p>Years Experience</p></div>
+        <div class="stat" data-animate="fade-up" style="--delay:.2s"><span class="stat-num" data-target="40" data-suffix="+">0</span><p>Professional Designers</p></div>
+        <div class="stat" data-animate="fade-up" style="--delay:.3s"><span class="stat-num" data-target="98" data-suffix="%">0</span><p>Client Satisfaction</p></div>
+      </div>
+    </section>
+
+    <!-- 6. Why Choose Us -->
+    <section id="why" class="section">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">Why Us</p>
+        <h2 class="section-title center" data-animate="fade-up">Why Choose Us</h2>
+        <div class="features-grid">
+          <div class="feature-card" data-animate="fade-up" style="--delay:.05s"><h3>Creative Designers</h3><p>Original concepts tailored to you — never copy-paste design.</p></div>
+          <div class="feature-card" data-animate="fade-up" style="--delay:.1s"><h3>Premium Materials</h3><p>Real wood, real stone, real quality you can feel for decades.</p></div>
+          <div class="feature-card" data-animate="fade-up" style="--delay:.15s"><h3>Modern Concepts</h3><p>Current, timeless design language — not passing trends.</p></div>
+          <div class="feature-card" data-animate="fade-up" style="--delay:.2s"><h3>Affordable Luxury</h3><p>High-end results planned smartly around your budget.</p></div>
+          <div class="feature-card" data-animate="fade-up" style="--delay:.25s"><h3>On-Time Delivery</h3><p>Clear timelines, honest updates, and projects that finish on schedule.</p></div>
+          <div class="feature-card" data-animate="fade-up" style="--delay:.3s"><h3>24/7 Support</h3><p>Questions at any hour — we stay reachable through your whole project.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials — SAMPLE CONTENT: replace with real client reviews before launch -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">Kind Words</p>
+        <h2 class="section-title center" data-animate="fade-up">What Clients Say</h2>
+        <div class="testimonial-slider" data-animate="fade-up">
+          <div class="t-track" id="tTrack">
+            <blockquote class="t-slide">
+              <img src="https://i.pravatar.cc/160?img=12" alt="Client photo placeholder" loading="lazy"/>
+              <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Sample review — replace with your client's real words. The kitchen they built completely changed how our family lives."</p>
+              <cite>Client Name — Kitchen Renovation</cite>
+            </blockquote>
+            <blockquote class="t-slide">
+              <img src="https://i.pravatar.cc/160?img=32" alt="Client photo placeholder" loading="lazy"/>
+              <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Sample review — replace with your client's real words. Every detail of the villa was handled with taste and care."</p>
+              <cite>Client Name — Villa Interior</cite>
+            </blockquote>
+            <blockquote class="t-slide">
+              <img src="https://i.pravatar.cc/160?img=56" alt="Client photo placeholder" loading="lazy"/>
+              <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>"Sample review — replace with your client's real words. The custom furniture is the first thing every guest asks about."</p>
+              <cite>Client Name — Custom Furniture</cite>
+            </blockquote>
+          </div>
+          <div class="t-controls">
+            <button class="t-prev" aria-label="Previous testimonial">&#8592;</button>
+            <div class="t-dots" id="tDots"></div>
+            <button class="t-next" aria-label="Next testimonial">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Team — PLACEHOLDER PEOPLE: replace with your real team (or remove the section) -->
+    <section id="team" class="section">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">The Studio</p>
+        <h2 class="section-title center" data-animate="fade-up">Meet The Team</h2>
+        <div class="team-grid">
+          <article class="team-card" data-animate="fade-up" style="--delay:.05s">
+            <div class="team-photo"><img src="https://i.pravatar.cc/400?img=68" alt="Team member placeholder" loading="lazy"/></div>
+            <h3>Add Name</h3><p>Founder &amp; Lead Designer</p>
+            <div class="team-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="LinkedIn">IN</a></div>
+          </article>
+          <article class="team-card" data-animate="fade-up" style="--delay:.1s">
+            <div class="team-photo"><img src="https://i.pravatar.cc/400?img=47" alt="Team member placeholder" loading="lazy"/></div>
+            <h3>Add Name</h3><p>Interior Architect</p>
+            <div class="team-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="LinkedIn">IN</a></div>
+          </article>
+          <article class="team-card" data-animate="fade-up" style="--delay:.15s">
+            <div class="team-photo"><img src="https://i.pravatar.cc/400?img=15" alt="Team member placeholder" loading="lazy"/></div>
+            <h3>Add Name</h3><p>Furniture Craftsman</p>
+            <div class="team-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="LinkedIn">IN</a></div>
+          </article>
+          <article class="team-card" data-animate="fade-up" style="--delay:.2s">
+            <div class="team-photo"><img src="https://i.pravatar.cc/400?img=5" alt="Team member placeholder" loading="lazy"/></div>
+            <h3>Add Name</h3><p>3D Visualizer</p>
+            <div class="team-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="LinkedIn">IN</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container faq-wrap">
+        <p class="kicker center" data-animate="fade-up">Questions</p>
+        <h2 class="section-title center" data-animate="fade-up">Frequently Asked</h2>
+        <div class="faq" data-animate="fade-up">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How long does a project take?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>It depends on scope — a single room can take a few weeks, while full homes and villas typically run several months. You'll get a clear timeline before we start.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Do you provide 3D visualization?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Yes — you'll see realistic previews of your space and can compare design directions before anything is built.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can you renovate existing homes?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Absolutely. We redesign and renovate existing spaces, working around what you want to keep and upgrading everything else.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How do consultations work?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Send us photos of your space or book a visit. We discuss your needs, style, and budget — then present design directions and a quote.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="kicker center" data-animate="fade-up">Get In Touch</p>
+        <h2 class="section-title center" data-animate="fade-up">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info" data-animate="fade-right">
+            <!-- PLACEHOLDERS — replace with your real contact details -->
+            <div class="contact-line"><span class="contact-label">Phone</span><a href="tel:+0000000000">+000 000 0000</a></div>
+            <div class="contact-line"><span class="contact-label">Email</span><a href="mailto:hello@example.com">hello@example.com</a></div>
+            <div class="contact-line"><span class="contact-label">Address</span><p>Your street, Your city</p></div>
+            <div class="map-placeholder" aria-label="Map placeholder">
+              <p>Google Map</p>
+              <span>Replace this box with your Google Maps embed code</span>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" data-animate="fade-left" novalidate>
+            <label>Name<input type="text" name="name" required placeholder="Your name" /></label>
+            <label>Email<input type="email" name="email" required placeholder="you@email.com" /></label>
+            <label>Phone<input type="tel" name="phone" placeholder="Optional" /></label>
+            <label>Message<textarea name="message" rows="5" required placeholder="Tell us about your space…"></textarea></label>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-logo">BAYAD<span> DESIGN STUDIO</span></p>
+        <p class="footer-tag">Luxury interiors, modern architecture, and custom furniture — built with care.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="tool.html">AI Studio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Residential Design</a></li>
+          <li><a href="#services">Kitchen Design</a></li>
+          <li><a href="#services">Furniture Design</a></li>
+          <li><a href="#services">3D Visualization</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" placeholder="Your email" required aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bayad Design Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
