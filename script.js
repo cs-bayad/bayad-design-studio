@@ -148,45 +148,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ---------- Testimonial slider ---------- */
-  var track = document.getElementById('tTrack');
-  var dotsWrap = document.getElementById('tDots');
-  var prevBtn = document.querySelector('.t-prev');
-  var nextBtn = document.querySelector('.t-next');
-  if (track && dotsWrap) {
-    var slides = track.children.length;
-    var current = 0;
-    var timer = null;
-
-    for (var i = 0; i < slides; i++) {
-      var dot = document.createElement('button');
-      dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
-      (function (index) {
-        dot.addEventListener('click', function () { goTo(index); restartTimer(); });
-      })(i);
-      dotsWrap.appendChild(dot);
-    }
-    var dots = dotsWrap.querySelectorAll('button');
-
-    function goTo(index) {
-      current = (index + slides) % slides;
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
-      dots.forEach(function (d, di) { d.classList.toggle('active', di === current); });
-    }
-    function restartTimer() {
-      if (timer) clearInterval(timer);
-      timer = setInterval(function () { goTo(current + 1); }, 6000);
-    }
-
-    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); restartTimer(); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); restartTimer(); });
-    var slider = document.querySelector('.testimonial-slider');
-    if (slider) {
-      slider.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
-      slider.addEventListener('mouseleave', restartTimer);
-    }
-    goTo(0);
-    restartTimer();
+  /* ---------- Review form: star picker + demo submit ---------- */
+  var starPicker = document.getElementById('starPicker');
+  var reviewForm = document.getElementById('reviewForm');
+  var reviewNote = document.getElementById('reviewNote');
+  var chosenRating = 0;
+  if (starPicker) {
+    var starBtns = starPicker.querySelectorAll('button');
+    starBtns.forEach(function (star) {
+      star.addEventListener('click', function () {
+        chosenRating = parseInt(star.getAttribute('data-value'), 10);
+        starBtns.forEach(function (s) {
+          var v = parseInt(s.getAttribute('data-value'), 10);
+          s.classList.toggle('filled', v <= chosenRating);
+        });
+      });
+    });
+  }
+  if (reviewForm && reviewNote) {
+    reviewForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var rname = reviewForm.querySelector('input[name="rname"]').value.trim();
+      var rtext = reviewForm.querySelector('textarea[name="rtext"]').value.trim();
+      if (!chosenRating) {
+        reviewNote.textContent = 'Please pick a star rating first.';
+        reviewNote.className = 'form-note err';
+        return;
+      }
+      if (!rname || !rtext) {
+        reviewNote.textContent = 'Please add your name and a short review.';
+        reviewNote.className = 'form-note err';
+        return;
+      }
+      reviewNote.textContent = 'Thank you, ' + rname + '! (Demo mode — reviews are not saved or published yet.)';
+      reviewNote.className = 'form-note ok';
+      reviewForm.reset();
+      chosenRating = 0;
+      if (starPicker) starPicker.querySelectorAll('button').forEach(function (s) { s.classList.remove('filled'); });
+    });
   }
 
   /* ---------- Back to top ---------- */
